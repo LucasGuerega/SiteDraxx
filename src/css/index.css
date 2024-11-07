@@ -10,15 +10,40 @@ h1 {
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-style: normal;
+    text-align: center;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    font-family: monospace;
+    text-decoration: unset;
+    position: relative;
+    bottom: -24%;
+    left: -21%;
 }
 
 button {
+    display: flex;
     background-color: #006b95;
     border: 5px solid rgba(255, 255, 255, 0.507);
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     transition: transform 0.3s;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+x {
+    font-size: 20px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+y {
+    text-decoration: underline;
+    text-decoration-color: #3cc8ff;
 }
 
 /*Class*/
@@ -31,6 +56,12 @@ button {
     height: 115px;
     position: relative;
     bottom: -94%;
+}
+
+.crab2 {
+    position: relative;
+    bottom: -15%;
+    left: -10%;
 }
 
 .crab {
@@ -54,6 +85,7 @@ button {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .centerBox2 {
     display: flex;
     position: relative;
@@ -100,10 +132,101 @@ button {
     cursor: pointer;
 }
 
+.guys {
+    position: relative;
+    width: 100px;
+}
+
+.terms {
+    width: 550px;
+}
+
 /*Ids*/
-#textImg{
+#contact {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#noty {
+    text-align: center;
+    background-color: rgb(65 149 179 / 25%);
+    border-radius: 0.25em;
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0 0.25em;
+    padding: 0.25em 0.5em;
+    text-indent: 0;
+}
+
+#bluesky {
+    position: relative;
+    width: 25px;
+    left: -5px;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+#terms {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Guys*/
+
+#draxx {
+    bottom: -12%;
+    left: -12%;
+}
+
+#gua {
+    bottom: -14%;
+    left: 13%;
+}
+
+#ravi {
+    bottom: -12%;
+    width: 130px;
+    left: 1%;
+}
+
+#ayato {
+    bottom: -10%;
+    left: 25%;
+}
+
+#gigante {
+    position: absolute;
+    left: 75%;
+    width: 10%;
+    animation: glubglub1 3s infinite alternate-reverse ease-in-out;
+}
+
+#juh {
+    right: 75%;
+    position: absolute;
+    width: 10%;
+    animation: glubglub2 3s infinite alternate-reverse ease-in-out;
+}
+
+#panda {
+    left: 86%;
+    position: absolute;
+    width: 10%;
+    animation: glubglub3 3s infinite alternate-reverse ease-in-out;
+}
+
+#yuki {
+    left: 7%;
+    position: absolute;
+    width: 10%;
+    animation: glubglub4 3s infinite alternate-reverse ease-in-out;
+}
+
+#textImg {
     font-size: 18px;
 }
+
 #imgs {
     display: flex;
     flex-direction: column;
@@ -113,10 +236,9 @@ button {
     height: 45%;
 }
 
-
 #buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
@@ -128,7 +250,7 @@ button {
 
 #ground {
     position: relative;
-    top: 26%;
+    top: 27%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -215,7 +337,6 @@ button {
 
 }
 
-
 #Title {
     position: absolute;
     max-width: 50%;
@@ -223,6 +344,68 @@ button {
 }
 
 /*Animations*/
+
+/*Guys*/
+@keyframes glubglub1 {
+    0% {
+        bottom: 90%;
+        top: 10%;
+    }
+
+    100% {
+        bottom: 100%;
+        top: 0%;
+    }
+}
+
+@keyframes glubglub2 {
+    0% {
+        bottom: 600%;
+        top: 125%;
+    }
+
+    100% {
+        bottom: 600%;
+        top: 100%;
+    }
+}
+
+@keyframes glubglub3 {
+    0% {
+        transform: translateY(700px);
+    }
+
+    50% {
+        transform: translateY(800px);
+    }
+
+    100% {
+        transform: translateY(700px);
+    }
+}
+
+@keyframes glubglub4 {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(8px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
 /*Hovers*/
 button:hover {
     background-color: rgba(108, 192, 145, 0.15);

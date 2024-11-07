@@ -24,11 +24,62 @@
     <div id="main">
         <div class="centerBox">
             <span></span>
-            <h1>WORK IN PROGRESS</h1>
-            <br>
+            <h1>
+                <table class="alt">
+                    <thead>
+                        <tr>
+                            <th>Comissões</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <x>Skin Padrão</x>
+                            </td>
+                            <td>
+                                <x>R$10,00</x>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>
+                                <y>Opções Futuras:</y>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <x>Modelagem 3D (sobre a skin)</x>
+                            </td>
+                            <td>
+                                <x>R$10,00</x>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <x>Skin com Modelagem 3D</x>
+                            </td>
+                            <td>
+                                <x>R$20,00<x>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h1>
+
+            <h1 id="contact">
+                Entre em Contato pelo Bluesky para acertamos a comissão<br>
+                Não esqueça das suas referencias, por imagem ou escrita (para skin do zero), até lá
+            </h1>
+            <h1 id="noty">Modelagem 3d sobre a skin terá em breve</h1>
+
             <div id="buttons">
-                <button type="button" onclick="back()">
-                    <h1>Back</h1>
+                <button type="button" onclick="blue()">
+                    <h1>Bluesky</h1><img id="bluesky" src="./src/assets/images/bluesky-brands-solid.svg" alt="">
                 </button>
             </div>
         </div>
@@ -36,6 +87,8 @@
         <img id="Title" src="./src/assets/images/draxx/image01.png" alt="Title">
 
         <div id="ground">
+            <img class="ground" id="special1" onclick="special2()" src="./src/assets/images/ocean_things/sand.jpeg"
+                alt="ground">
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
@@ -49,11 +102,12 @@
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
             <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
-            <img class="ground" src="./src/assets/images/ocean_things/sand.jpeg" alt="ground">
-            <img class="ground" id="special" onclick="special()" src="./src/assets/images/ocean_things/sand.jpeg"
+            <img class="ground" id="special2" onclick="special()" src="./src/assets/images/ocean_things/sand.jpeg"
                 alt="ground">
         </div>
         <img class="crab" src="./src/assets/images/ocean_things/crab.gif" alt="">
+        <a href="https://github.com/LucasGuerega">Created by Lucas Guerega</a>
+
     </div>
     <!-- Scripts -->
     <script src="./src/js/click.js"></script>
